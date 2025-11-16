@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantasia E-Commerce</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ========================= */
+/* NAVIGATION BAR (PINK GOLD) */
+/* ========================= */
+.navbar-pink-gold {
+    background-color: #751537 !important;
+}
+
+.navbar-pink-gold .nav-link,
+.navbar-pink-gold .navbar-brand {
+    color: rgb(241, 144, 144) !important;
+    font-weight: 600;
+}
+
+.navbar-pink-gold .nav-link:hover {
+    color: #ff004c !important;
+}
+
+/* Fix toggler icon color */
+.navbar-toggler {
+    border-color: #f19090;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(5);
+}
+
+/* ========================= */
+/* GLOBAL THEME COLORS */
+/* ========================= */
+:root {
+    --primary-color: #850531;
+    --secondary-color: #fce4ec;
+    --text-dark: #000000;
+    --button-hover: #f34a4a;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+}
+
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+.hero-section {
+    background: linear-gradient(to right, #f8c8d8, #f7dfe8);
+    padding: 80px 0;
+    border-radius: 0 0 20px 20px;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    color: #750525;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover);
+}
+
+/* ========================= */
+/* PRODUCT CARDS */
+/* ========================= */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+footer {
+    background: #3b3b3b !important;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-pink-gold fade-in">
+    <div class="container">
+        
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Kantasia" width="150">
+        </a>
+
+        <!-- Mobile button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">🛒 Cart</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section class="hero-section text-center fade-in">
+    <div class="container">
+        <h1 class="display-4">Welcome to Kantasia</h1>
+        <p class="lead">Luxury beauty & wellness products crafted for you</p>
+        <a href="#" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+    </div>
+</section>
+
+
+<!-- PRODUCT SECTION -->
+<section class="py-5 fade-in">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Favourite Products</h2>
+
+        <div class="row g-4">
+
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/product1.png" class="card-img-top" alt="Product 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kantan Bloom Sparkle – Premium Bunga Kantan Sparkling Beverage (1000ml) | Less Sugar | No Added Flavour | Natural, Refreshing & Aromatic </h5>
+                        <p class="card-text">RM9.90</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/product2.png" class="card-img-top" alt="Product 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product Name 2</h5>
+                        <p class="card-text">RM35.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/product3.png" class="card-img-top" alt="Product 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product Name 3</h5>
+                        <p class="card-text">RM49.90</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="text-white py-4 mt-5 fade-in">
+    <div class="container text-center">
+        <p class="mb-1 fw-bold">Kantasia Beauty & Wellness</p>
+        <p class="mb-2">Your trusted e-commerce store for premium products</p>
+
+        <div class="mb-2">
+            <a href="#" class="text-white me-3">Home</a>
+            <a href="#" class="text-white me-3">Products</a>
+            <a href="#" class="text-white me-3">About</a>
+            <a href="#" class="text-white">Contact</a>
+        </div>
+
+        <p class="mt-3 mb-0">&copy; 2025 Kantasia Beauty & Wellness. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
